@@ -1,7 +1,5 @@
 # tor-privoxy-alpine
 
-[![](https://badge.imagelayers.io/dewey/docker-tor-privoxy-alpine:latest.svg)](https://imagelayers.io/?images=dewey/docker-tor-privoxy-alpine:latest 'Get your own badge on imagelayers.io')
-
 The smallest (**15 MB**) docker image with [Tor](https://www.torproject.org/) through [Privoxy](http://www.privoxy.org/), a *privacy enhancing proxy*, based on [Alpine Linux](https://registry.hub.docker.com/_/alpine).
 
 *Note:*
