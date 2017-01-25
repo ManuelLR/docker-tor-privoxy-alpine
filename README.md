@@ -1,15 +1,19 @@
 # tor-privoxy-alpine
 
-[![](https://badge.imagelayers.io/rdsubhas/tor-privoxy-alpine:latest.svg)](https://imagelayers.io/?images=rdsubhas/tor-privoxy-alpine:latest 'Get your own badge on imagelayers.io')
+[![](https://badge.imagelayers.io/dewey/docker-tor-privoxy-alpine:latest.svg)](https://imagelayers.io/?images=dewey/docker-tor-privoxy-alpine:latest 'Get your own badge on imagelayers.io')
 
 The smallest (**15 MB**) docker image with [Tor](https://www.torproject.org/) through [Privoxy](http://www.privoxy.org/), a *privacy enhancing proxy*, based on [Alpine Linux](https://registry.hub.docker.com/_/alpine).
 
+*Note:*
+
+This project was forked from [rdsubhas/docker-tor-privoxy-alpine](https://github.com/rdsubhas/docker-tor-privoxy-alpine). I merged all the open merge requests, fixed some build issues and will maintain this for now.
+
 ```
-docker run -d -p 8118:8118 -p 9050:9050 rdsubhas/tor-privoxy-alpine
-curl --proxy localhost:8118 https://www.google.com
+docker run -d -p 8118:8118 -p 9050:9050 dewey/docker-tor-privoxy-alpine
+curl -x http://localhost:8118 https://ipinfo.io/json
 ```
 
-Read the accompanying [blog post](https://medium.com/@rdsubhas/docker-image-with-tor-privoxy-and-a-process-manager-under-15-mb-c9e344111b61) for more details.
+Read the accompanying [blog post](https://medium.com/@rdsubhas/docker-image-with-tor-privoxy-and-a-process-manager-under-15-mb-c9e344111b61) from the original author for more details.
 
 ## Configuration
 
